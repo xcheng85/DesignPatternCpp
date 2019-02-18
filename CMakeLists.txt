@@ -1,0 +1,17 @@
+cmake_minimum_required(VERSION 3.0)
+project(Design_Pattern_CPP)
+
+find_package(Boost 1.68.0 COMPONENTS filesystem REQUIRED)
+#find_package(Boost 1.68.0 COMPONENTS thread REQUIRED)
+
+if(Boost_FOUND)
+    set(CMAKE_C_STANDARD 99)
+    set(CMAKE_CXX_STANDARD 17)
+    set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
+    enable_testing()
+
+    add_subdirectory(googletest)
+    add_subdirectory(Singleton)
+    add_subdirectory(BuildPattern)
+endif()
