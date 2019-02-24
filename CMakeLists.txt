@@ -13,6 +13,7 @@ if(Boost_FOUND)
 
     add_subdirectory(googletest)
     add_subdirectory(Singleton)
+    add_subdirectory(Mapleton)
     add_subdirectory(DependencyInjection)
     add_subdirectory(BuildPattern)
     add_subdirectory(Proto)
