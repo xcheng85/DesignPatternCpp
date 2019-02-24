@@ -17,6 +17,10 @@ target_link_libraries(diDemo2 PUBLIC gtest_main ${Boost_LIBRARIES})
 add_executable(diHelloWorld ${HEADERS} diHelloWorld.cpp)
 target_link_libraries(diHelloWorld PUBLIC gtest_main ${Boost_LIBRARIES})
 
+add_executable(diBinding ${HEADERS} diBinding.cpp)
+target_link_libraries(diBinding PUBLIC gtest_main ${Boost_LIBRARIES})
+
 install(TARGETS ${PROJECT_NAME} RUNTIME DESTINATION ../bin)
 install(TARGETS diDemo2 RUNTIME DESTINATION ../bin)
-install(TARGETS diHelloWorld RUNTIME DESTINATION ../bin)
+install(TARGETS diHelloWorld RUNTIME DESTINATION ../bin) 
+install(TARGETS diBinding RUNTIME DESTINATION ../bin) 
