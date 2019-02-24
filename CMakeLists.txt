@@ -13,5 +13,6 @@ if(Boost_FOUND)
 
     add_subdirectory(googletest)
     add_subdirectory(Singleton)
+    add_subdirectory(DependencyInjection)
     add_subdirectory(BuildPattern)
 endif()
