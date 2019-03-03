@@ -8,7 +8,7 @@
             "name": "(lldb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/cpp11_threadsafe_queue",
+            "program": "${workspaceFolder}/bin/Interpreter",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
